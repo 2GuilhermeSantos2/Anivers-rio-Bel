@@ -56,4 +56,28 @@ body, html {
       flex-direction: column;
     }
   }
+
+.imagem {
+  /* Certifique-se de que as imagens não ocupem toda a largura em dispositivos móveis */
+  max-width: 100%;
+  height: auto;
+}
+
+#countdown {
+  /* Ajuste a contagem regressiva para ser exibida entre as imagens */
+  display: block;
+  margin: 20px auto; /* Isso adiciona espaço acima e abaixo da contagem regressiva */
+  font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  #countdown {
+    font-size: 1.5em; /* Tamanho de fonte menor para telas menores */
+  }
+}
   
